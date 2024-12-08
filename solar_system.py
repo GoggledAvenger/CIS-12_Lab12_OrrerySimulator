@@ -6,17 +6,19 @@ from gravity import Gravity
 class SolarSystem:
     """gravitationally bound heavenly bodies to and including the sun"""
 
-    the_sun = Sun('SOL',1.9891,0,0)
+    the_sun = Sun('SOL',1000000000,1.9891,0,0, 'yellow')
     planets = []
 
     def add_planet(self,new_planet:Planet):
-        pass
+        global planets
+        new_planet = Planet
+        return planets.append(new_planet)
 
     def add_sun(self,the_sun:Sun):
         pass
 
     def show_planets(self):
-        pass
+        pass    # turtle stuff
 
     def move_planets(self):
         dt = .001  # Constant time interval for each solar system iteration.
